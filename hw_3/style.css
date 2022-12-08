@@ -1,0 +1,360 @@
+:root{
+    --color:rgb(204, 161, 121);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ------- REGISTER PAGE AND LOGIN PAGE ------- */
+
+.registr, .login{
+    text-align: center;
+    margin: 1em 0;
+    color: var(--color);
+}
+.registr h1{
+    margin-bottom: 0.3em;
+}
+.form_1, .form_2{
+    margin: 0 auto;
+    width: 35em;
+}
+.form_1,.form_2 fieldset{
+    padding: 1.5em;
+}
+.main label, .form_2 label{
+    display: block;
+    margin: 1em 0 0.5em 1.5em;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--color);
+}
+.main input, .form_2 input{
+    margin: 0 0 1em 1.5em;
+    padding: 1em 1em 1em 0.5em;
+    width:88%;
+    border-radius: 15px;
+    height: 2em;
+}
+.form_1 fieldset>input{
+    margin-left: 2em;
+    margin-right: 0.4em;
+}
+.form_1 fieldset>label{
+    color: var(--color);
+    font-size: 18px;
+}
+.form_1 button, .form_2 button{
+    display: block;
+    margin: 2.5em auto;
+    width: 17em;
+    height: 4em;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: rgb(145, 145, 145);
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: var(--color);
+    background-color: white;
+}
+.form_1 button:hover, .form_2 button:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+/* --------- CONTENT PAGE & KDRAMA_GOBLIN PAGES--------- */
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+#logo{
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+#logo a{
+    color: black;
+    text-decoration: none;
+}
+#logo::first-letter{
+    color: var(--color);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-right: 8em;
+}
+nav ul a{
+    text-decoration: none;
+    color: var(--color);
+    font-size: 24px;
+}
+.num{
+    color: var(--color);
+}
+
+/* MAIN OF CONTENT PAGE */
+
+.home{
+    background: url(main.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    margin-top: 4.8em;
+}
+table, tr, td, th{
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+}
+table caption{
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--color);
+    margin-bottom: 1.5em;
+}
+table caption span{
+    font-size: 14px;
+    font-weight: 300;
+    vertical-align: center;
+    text-decoration: underline;
+}
+table{
+    width: 70%;
+    margin: 3em auto;
+}
+td img{
+    width: 100%;
+}
+.table{
+    border-bottom: 1px solid black;
+}
+.list{
+    margin-left: 2.5em;
+    padding: 2em;
+}
+.main_content{
+    border-bottom: 1px solid black;
+}
+.list h2, dt{
+    color: var(--color);
+    margin-top: 1em;
+    font-size: 28px;
+}
+.list ul, .list ol, .list dl{
+    font-size: 20px;
+}
+.list ul > li, .list ol > li{
+    text-decoration: underline;
+}
+.list ul li + div, .list ol li + div{
+    color: var(--color);
+}
+.list ul li:hover::first-letter, ol li:hover::first-letter{
+    font-size: 28px;
+}
+
+/* HEADER OF KDRAMA_GOBLIN PAGE ~ BURGER-MENU */
+
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* MAIN OF KDRAMA_GOBLIN PAGE */
+
+.home_2{
+    margin-top: 8em;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+.text_goblin{
+    min-width: 450px;
+    padding-top: 5em;
+    margin-left: 5em;
+}
+.text_goblin h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--color);
+    margin-bottom: 30px;
+}
+.text_goblin p{
+    font-size: 26px;
+    line-height: 1.3em;
+    text-indent: 20px;
+}
+.img_goblin img{
+    width: 45rem;
+}
+.plot{
+    margin-top: 2.5em;
+}
+.plot h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: var(--color);
+    margin-bottom: 15px;
+}
+.plot p{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+}
+.actors h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: var(--color);
+    margin-bottom: 15px;
+    margin-top: 55px;
+}
+.actors .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.actors .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    position: relative;
+}
+.actors .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.actors .box-container .box .image img{
+    width: 40%;
+}
+.actors .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.actors .box-container .box .content h3{
+    font-size: 1.9rem;
+    color: #333;
+}
+aside{
+    position: fixed;
+    left: -40px;
+    top: 780px;
+}
+aside img{
+    position: relative;
+    width: 200px;
+}
+
+/* FOOTER */
+
+.footer{
+    padding: 1.5em 0 1em;
+    text-align: center;
+    color: var(--color);
+}
+footer hr{
+    display: none;
+}
+.footer ~ p{
+    color: var(--color);
+    text-align: center;
+    margin: 1px 0 10px;
+    padding: 2px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:800px){
+    header .fa-bars{
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header #toggler:checked ~ nav{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header nav ul{
+        display: block;
+    }
+    header nav a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+}
+
+@media (max-width: 1140px){
+    .home_2{
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    .img_goblin img{
+        width: 100%;
+    }
+    .img_goblin{
+        width: 50em;
+        margin: 0 auto;
+    }
+    .text_goblin{
+        margin-right: 4em;
+    }
+}
+
+@media (max-width: 765px){
+    .img_goblin img{
+        width: 100%;
+    }
+    .img_goblin{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .text_goblin{
+        margin-right: 4em;
+    }
+}
+@media (max-width:538px){
+    .text_goblin{
+        min-width: 100px;
+        margin-right: 4em;
+    }
+}
